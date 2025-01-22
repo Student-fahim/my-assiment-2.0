@@ -456,14 +456,14 @@ li{
         /* width: 50px;
         margin-left: -10px;
         margin-left: 10px; */
-        grid-template-columns: repeat(2,1fr)
+        grid-template-columns: repeat(1,1fr)
     }
-    .box4{
+    /* .box4{
         width:260px;
     }
     .image{
         width: 250px;
-    }
+    } */
     .contentbox-4{
         flex-direction: column;
         gap: 10px;
