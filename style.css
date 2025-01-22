@@ -279,7 +279,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 .contentbox-box{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:  ;
     column-gap: 10px;
     row-gap: 10px;
 }
@@ -315,6 +315,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     border-radius: 10px;
 
 }
+
 .box-4-btn{
     border: none;
     position: relative;
@@ -357,6 +358,145 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     width: 200px;
     padding: 5px;
 }
+
+/* thsi is main */
+.stories {
+    padding: 50px 20px;
+    text-align: center;
+    background: 
+      linear-gradient(to top, rgba(254, 189, 72, 0.4), rgba(255, 255, 255, 0.8)), 
+      url('../assets/bg.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+  
+.stories h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+  
+  
+.story-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.left-card {
+    flex: 1;
+    max-width: 45%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.left-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+}
+  
+.left-card .date-tag {
+    position: relative;
+    bottom: 5%;
+    left: -30%;
+    background: #00b74a;
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+  
+.left-card .content {
+    margin-top: 15px;
+    text-align: left;
+    padding: 10px 40px;
+    max-width: 80%;
+}
+  
+.left-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.left-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+  
+  
+.right-cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+  
+.story-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+  
+.story-card img {
+    width: 100%;
+    border-bottom: 3px solid #f3f3f3;
+}
+  
+.story-card .date-tag {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    background: #1abc9c;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 15px;
+}
+  
+.story-card h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px 50px;
+    text-align: left;
+}
+  
+/* view-btn */
+
+.bottom-button {
+    margin-top: 30px;
+}
+  
+.bottom-button .explore-more {
+    background: #333;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+  .bottom-button .explore-more:hover {
+    background: #444;
+}
+
 
 /* this is footer */
 
@@ -404,6 +544,9 @@ li{
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    .left-card{
+        display: none;
     }
     .contenbox-1{
         flex-direction: column-reverse;
@@ -456,7 +599,7 @@ li{
         /* width: 50px;
         margin-left: -10px;
         margin-left: 10px; */
-        grid-template-columns: repeat(1,1fr)
+        grid-template-rows: repeat(2,1fr)
     }
     /* .box4{
         width:260px;
