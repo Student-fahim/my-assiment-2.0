@@ -284,11 +284,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     row-gap: 10px;
 }
 .box4{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     font-weight: 400;
@@ -457,9 +453,9 @@ li{
     }
     .contentbox-box{
         column-gap: -6;
-        width: 50px;
+        /* width: 50px;
         margin-left: -10px;
-        margin-left: 10px;
+        margin-left: 10px; */
         grid-template-columns: repeat(2,1fr)
     }
     .box4{
