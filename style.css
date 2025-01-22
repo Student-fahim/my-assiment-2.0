@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    max-width: 1200px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -458,7 +458,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
   
 .story-card .date-tag {
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
     left: 50px;
     background: #1abc9c;
     color: white;
@@ -586,6 +586,7 @@ li{
         position: relative;
         right: 200px;
         margin-bottom: 300px;
+        max-width: 300px;
 
     }
     .ul-f{
